@@ -35,9 +35,9 @@ const App = () => {
     /* Page routes for when used is logged in. */
     const LOGGED_IN_ROUTES = (
         <>
-            <Route path={ROUTES.HOME} element={<Navigate to={ROUTES.LOGIN} replace />} />
+            <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.LOGIN} element={<Login />} />
-            <Route path={ROUTES.REGISTER} element={<Home />} />
+            <Route path={ROUTES.REGISTER} element={<Register />} />
             <Route path={ROUTES.PREFERENCES} element={<Preferences />} />
             <Route path={ROUTES.SETTINGS} element={<Settings />} />
             <Route path={ROUTES.REPORT_PROBLEM} element={<ReportProblem />} />
